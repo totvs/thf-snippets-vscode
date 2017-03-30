@@ -1,0 +1,41 @@
+{
+    "name": "thf-snippets",
+    "publisher": "totvs",
+    "displayName": "THF TOTVS Snippets",
+    "description": "The HTML Framework snippets by TOTVS.",
+    "icon": "images/thf-shield.png",
+    "galleryBanner": {
+        "color": "#333",
+        "theme": "dark"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/devtotvs/thf-snippets-vscode.git"
+    },
+    "keywords": [
+        "Angular",
+        "TOTVS",
+        "THF",
+        "HTML"
+    ],
+    "version": "1.0",
+    "engines": {
+        "vscode": "0.10.x"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            }
+        ]
+    }
+}
