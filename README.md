@@ -2,7 +2,7 @@
 
 This extension for Visual Studio Code adds snippets for THF TOTVS.
 
-<!--![Use Extension](images/use-extension.gif)-->
+![Use Extension](images/use-extension.gif)
 
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
@@ -17,7 +17,7 @@ thfdirective       /// Create the .directive file
 thfdirectivelite   /// Create the .directive (lite) file
 thffunctioncompile /// Create the compile function for .directive file
 thffunctionlink    /// Create the link function for .directive file
-thfdirectivespec   /// Create the .controller.spec file
+thfdirectivespec   /// Create the .directive.spec file
 thffactory         /// Create the .factory file
 thffactory         /// Create the .factory.spec file
 thffilter          /// Create the .filter file
@@ -35,25 +35,25 @@ thfservicespec     /// Create the .service.spec file
 thftpopover                  /// Totvs Template Popover
 thftpopoverremoveall         /// Totvs Popover Remove All
 thfbutton                    /// Totvs Button
-thfcarousel                  /// Totvs carousel
+thfcarousel                  /// Totvs Carousel
 thfchart                     /// Totvs Chart
-thffieldcheckbox             /// Totvs Checkbox
-thffieldcombo                /// Totvs Field Combo
+thfcheckbox                  /// Totvs Field Checkbox
+thfcombo                     /// Totvs Field Combo
 thfdaterange                 /// Totvs Date Range Field
 thfdatepicker                /// Totvs Datepicker Field
-thfdecimal                   /// Totvs Field Decimal
 thfdiagram                   /// Totvs Diagram
+thfdecimal                   /// Totvs Field Decimal
 thfdivider                   /// Totvs Devider
 thfpageeditable              /// Totvs Editable Page
 thfeditor                    /// Totvs Editor
 thfemail                     /// Totvs Email Field
 thfexecution                 /// Totvs Executation
 thfexecutionitem             /// Totvs Executation Item
-thffieldcanclean             /// Totvs field canclean
+thfcanclean                  /// Totvs field canclean
 thfgantt                     /// Totvs Gantt
 thfgrid                      /// Totvs Grid
 thfgridcolumn                /// Totvs Grid Column
-thfgridcolumitem             /// Totvs Grid Column Item
+thfgridcolumnitem            /// Totvs Grid Column Item
 thfgriddetail                /// Totvs Grid Detail
 thfgridgroup                 /// Totvs Grid Group
 thfgridgroupaggregate        /// Totsvs Grid Group Aggregate
@@ -62,16 +62,15 @@ thfinput                     /// Totvs Field Input
 thfinputrange                /// Totvs Field Input Ramge
 thflistitem                  /// Totvs Item of List
 thflistitemaction            /// Totvs Item Action of List 
-thflistitemcontent           /// Totvs List Item Content
-thflistitemcontentdetail     /// Totvs List Item Content Detail
-thflistitemheader            /// Totvs List Item Header
-thflistiteminfo              /// Totvs List Item Info
-thflistitemtitle             /// Totvs List Item Title
+thflistitemcontent           /// Totvs Item List  Content
+thflistitemcontentdetail     /// Totvs Item List  Content Detail
+thflistitemheader            /// Totvs Item List  Header
+thflistiteminfo              /// Totvs Item List  Info
+thflistitemtitle             /// Totvs Item List  Title
 thflistpagination            /// Totvs List Pagination
 thfmodalbody                 /// Totvs Modal Body
-thfdatepicker                /// Totvs Field Datepicker
-thfdaterange                 /// Totvs Field Date Range
 thfmodalbody                 /// Totvs Modal Body
+thfmodalfooter               /// undefined
 thfmodalfooter               /// Totvs Modal Footer
 thfmodalheader               /// Totvs Modal Header
 thfmultiselect               /// Totvs Multiselect
@@ -79,24 +78,24 @@ thfnumber                    /// Totvs Number
 thfpage                      /// Totvs Page
 thfpagealert                 /// Totvs Page Alert
 thfpagebreadcrumb            /// Totvs Page Breadcrumb
-thfpagebreadcrumb            /// Totvs Breadcrumb
+thfbreadcrumb                /// Totvs Breadcrumb
 thfpagechild                 /// Totvs Page Child
 thfpagecontent               /// Totvs Page Content
-thfpagecontentheader         /// Tovs Page Content Header
+thfpagecontentheader         /// Totvs Page Content Header
 thfpagedetail                /// Totvs Page Detail
 thfpagedetailinfo            /// Totvs Page Detail Info
 thfpagedetailinfogroup       /// Totvs Page Detail Info Group
 thftypeahead                 /// Totvs Typeahead
 thfpageheader                /// Totvs Page Header
 thfpageheaderoperation       /// Totvs Page Header Operation
-thfpageheaderoperationaction /// Ttovs Page Header Operation Action
+thfpageheaderoperationaction /// Totvs  Page Header Operation Action
 thfpageheaderoperationfilter /// Totvs Page Header Operation Filter
 thfpageheadertitle           /// Totvs Page Header title
 thfpagenavbar                /// Totvs Page Navbar
-thfpagequickfilter           /// Ttovs Page Quick Filter
-thfpagequickfilter           /// Totvs Page Quick Filter
-thfpagetags                  /// Ttovs Page Tags
-thfphone                     /// Tovs Phone
+thfpagequickfilter           /// Totvs  Page Quick Filter
+thfpagequickselect           /// Totvs Page Quick select
+thfphone                     /// Totvs Phone
+thfpagetags                  /// Totvs  Page Tags
 thfradio                     /// Totvs Radio
 thfrow                       /// Totvs Row
 thfschedule                  /// Totvs Schedule
@@ -105,11 +104,11 @@ thftab                       /// Totvs Tab
 thftabdropdown               /// Totvs Tab Dropdown
 thftabdropdownitem           /// Totvs Tab Dropdown Item
 thftable                     /// Totvs Table
-thftime                      /// Totvs Time 
 thftabset                    /// Totvs Tabset
-thftabset                    /// Totvs Tabset Tab
-thfpagewidget                /// Totvs Page Widget
+thftabsettab                 /// Totvs Tabset Tab
+thftime                      /// Totvs Time 
 thfupload                    /// Totvs Upload
+thfpagewidget                /// Totvs Page Widget
 thfpagewidgetbody            /// Totvs Page Widget Body
 thfpagewidgetfooter          /// Totvs Page Widget Footer
 thfpagewidgetfooteraction    /// Totvs Page Widget Footer Actions
@@ -128,4 +127,4 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 5. Choose the extension
 6. Reload Visual Studio Code
 
-<!--![Install Extension](images/install-extension.gif)-->
+![Install Extension](images/install-extension.gif)

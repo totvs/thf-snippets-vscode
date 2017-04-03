@@ -25,7 +25,7 @@
 		],
 		"description": "Totvs Button"
 	},
-	"Totvs carousel": {
+	"Totvs Carousel": {
 		"prefix": "thfcarousel",
 		"body": [
 			"<totvs-carousel",
@@ -35,7 +35,7 @@
 			"   t-height=\"${5:300}px\">",
 			"</totvs-carousel>"
 		],
-		"description": "Totvs carousel"
+		"description": "Totvs Carousel"
 	},
 	"Totvs chart": {
 		"prefix": "thfchart",
@@ -51,49 +51,56 @@
 		"description": "Totvs Chart"
 	},
 	"Totvs  Field Checkbox": {
-		"prefix": "thffieldcheckbox",
+		"prefix": "thfcheckbox",
 		"body": [
-			"<totvs-field totvs-checkbox>",
-			"   ${1:...}",
-			"</totvs-field totvs-checkbox>"
+			"<totvs-field totvs-checkbox",
+			"   ng-change=\"controller.change()\"",
+			"   label=\"${1:...}\"",
+			"   ng-model=\"controller.checkbox\">",
+			"</totvs-field>"
 		],
-		"description": "Totvs Checkbox"
+		"description": "Totvs Field Checkbox"
 	},
 	"Totvs  Field Combo": {
-		"prefix": "thffieldcombo",
+		"prefix": "thfcombo",
 		"body": [
-			"<totvs-field totvs-combo>",
-			"   ${1:...}",
-			"</totvs-field totvs-combo>"
+			"<totvs-field",
+			"   totvs-combo",
+			"   label=\"${1:Totvs Combo}\"",
+			"   ${2:canclean}",
+			"   ng-required=\"${3:true}\"",
+			"   t-options=\"${4:controller.options}\"",
+			"   ng-model=\"controller.combo\">",
+			"   <validator key=\"${5:required}\">${6:Este campo deve ser preenchido.}</validator>",
+			"</totvs-field >"
 		],
 		"description": "Totvs Field Combo"
 	},
 	"Totvs  Field Date Range": {
 		"prefix": "thfdaterange",
 		"body": [
-			"<totvs-field  totvs-date-range>",
-			"   ${1:...}",
-			"</totvs-field totvs-date-range>"
+			"<totvs-field",
+			"   totvs-date-range>",
+			"   label='${1:Período}'",
+			"   ng-model='controller.range'",
+			"   ${2:canclean}>",
+			"</totvs-field>"
 		],
-		"description": "Totvs Field Date Range"
+		"description": "Totvs Date Range Field"
 	},
 	"Totvs  Field Datepicker": {
 		"prefix": "thfdatepicker",
 		"body": [
-			"<totvs-field  totvs-datepicker>",
-			"   ${1:...}",
-			"</totvs-field totvs-datepicker>"
+			"<totvs-field",
+			"   totvs-datepicker",
+			"   ng-model='controller.date'",
+			"   culture='${1:pt}'",
+			"   placeholder='${2:Escolha a data}'",
+			"   ${3:canclean}",
+			"   ng-change='controller.changeDatepicker()' >",
+			"</totvs-field>"
 		],
-		"description": "Totvs Field Datepicker"
-	},
-	"Totvs  Field Decimal": {
-		"prefix": "thfdecimal",
-		"body": [
-			"<totvs-field  totvs-decimal>",
-			"   ${1:...}",
-			"</totvs-field totvs-decimal>"
-		],
-		"description": "Totvs Field Decimal"
+		"description": "Totvs Datepicker Field"
 	},
 	"Totvs diagram": {
 		"prefix": "thfdiagram",
@@ -118,6 +125,18 @@
 		],
 		"description": "Totvs Diagram"
 	},
+	"Totvs  Field Decimal": {
+		"prefix": "thfdecimal",
+		"body": [
+			"<totvs-field",
+			"   totvs-decimal",
+			"   ng-model=\"typedDecimal\"",
+			"   m-dec=\"${1:5}\"",
+			"   label=\"${2:Decimal}\">",
+			"</totvs-field>"
+		],
+		"description": "Totvs Field Decimal"
+	},
 	"Totvs Divider": {
 		"prefix": "thfdivider",
 		"body": [
@@ -134,21 +153,6 @@
 		],
 		"description": "Totvs Devider"
 	},
-	"Totvs editor": {
-		"prefix": "thfeditor",
-		"body": [
-			"<totvs-editor",
-			"   t-mode          = \"${1:classic}\"",
-			"   t-readonly      = \"{{ ${2:ctrl.editorReadonly} }}\"",
-			"   t-model         = \"${3:ctrl.editorModel}\"",
-			"   t-tools         = \"${4:ctrl.editorTools}\"",
-			"   t-on-change     = \"${5:ctrl.onEditorChange()}\"",
-			"   t-on-pdf-export = \"${6:ctrl.onEditorExport(e)}\">",
-			"   </totvs-editor>",
-			"\t$0"
-		],
-		"description": "Totvs Editor"
-	},
 	"Totvs Page Editable": {
 		"prefix": "thfpageeditable",
 		"body": [
@@ -164,11 +168,30 @@
 		],
 		"description": "Totvs Editable Page"
 	},
+	"Totvs editor": {
+		"prefix": "thfeditor",
+		"body": [
+			"<totvs-editor",
+			"   t-mode          = \"${1:classic}\"",
+			"   t-readonly      = \"{{ ${2:ctrl.editorReadonly} }}\"",
+			"   t-model         = \"${3:ctrl.editorModel}\"",
+			"   t-tools         = \"${4:ctrl.editorTools}\"",
+			"   t-on-change     = \"${5:ctrl.onEditorChange()}\"",
+			"   t-on-pdf-export = \"${6:ctrl.onEditorExport(e)}\">",
+			"   </totvs-editor>",
+			"\t$0"
+		],
+		"description": "Totvs Editor"
+	},
 	"Totvs  Field Email": {
 		"prefix": "thfemail",
 		"body": [
-			"<totvs-field  totvs-email>",
-			"   ${1:...}",
+			"<totvs-field",
+			"   totvs-email",
+			"   ng-model=\"controller.email\"",
+			"   label=\"${1:Totvs Email}\"",
+			"   ${2:canclean}",
+			"   placeholder=\"${3:Digite o seu email}\">",
 			"</totvs-field totvs-email>"
 		],
 		"description": "Totvs Email Field"
@@ -192,7 +215,7 @@
 		"description": "Totvs Executation Item"
 	},
 	"Totvs field canclean": {
-		"prefix": "thffieldcanclean",
+		"prefix": "thfcanclean",
 		"body": [
 			"<field",
 			"   type=\"typeahead\"",
@@ -242,7 +265,7 @@
 		"description": "Totvs Grid Column"
 	},
 	"Totvs Grid Colum Item": {
-		"prefix": "thfgridcolumitem",
+		"prefix": "thfgridcolumnitem",
 		"body": [
 			"<totvs-grid-column>",
 			"    <option>${1:...}</option>",
@@ -333,7 +356,7 @@
 			"    ${1:...}",
 			"</totvs-list-item-content>"
 		],
-		"description": "Totvs List Item Content"
+		"description": "Totvs Item List  Content"
 	},
 	"Totvs List Item Content Detail": {
 		"prefix": "thflistitemcontentdetail",
@@ -342,7 +365,7 @@
 			"    ${1:...}",
 			"</totvs-list-item-content-detail>"
 		],
-		"description": "Totvs List Item Content Detail"
+		"description": "Totvs Item List  Content Detail"
 	},
 	"Totvs List Item Header": {
 		"prefix": "thflistitemheader",
@@ -351,7 +374,7 @@
 			"    ${1:...}",
 			"</totvs-list-item-header>"
 		],
-		"description": "Totvs List Item Header"
+		"description": "Totvs Item List  Header"
 	},
 	"Totvs List Item Info": {
 		"prefix": "thflistiteminfo",
@@ -360,7 +383,7 @@
 			"    ${1:...}",
 			"</totvs-list-item-info>"
 		],
-		"description": "Totvs List Item Info"
+		"description": "Totvs Item List  Info"
 	},
 	"Totvs List Item Title": {
 		"prefix": "thflistitemtitle",
@@ -369,7 +392,7 @@
 			"    ${1:...}",
 			"</totvs-list-item-title>"
 		],
-		"description": "Totvs List Item Title"
+		"description": "Totvs Item List  Title"
 	},
 	"Totvs List Pagination": {
 		"prefix": "thflistpagination",
@@ -438,6 +461,15 @@
 		],
 		"description": "Totvs Number"
 	},
+	"Totvs Page": {
+		"prefix": "thfpage",
+		"body": [
+			"<totvs-page ${1:type}=\"${2:list}\">",
+			"    ${3:...}",
+			"</totvs-page>"
+		],
+		"description": "Totvs Page"
+	},
 	"Totvs Page Alert": {
 		"prefix": "thfpagealert",
 		"body": [
@@ -459,20 +491,11 @@
 		"description": "Totvs Page Breadcrumb"
 	},
 	"Totvs Breadcrumb": {
-		"prefix": "thfpagebreadcrumb",
+		"prefix": "thfbreadcrumb",
 		"body": [
 			"<breadcrumb ${1:link}=\"${2:#/}\"> ${3:...} </breadcrumb>"
 		],
 		"description": "Totvs Breadcrumb"
-	},
-	"Totvs Page": {
-		"prefix": "thfpage",
-		"body": [
-			"<totvs-page ${1:type}=\"${2:list}\">",
-			"    ${3:...}",
-			"</totvs-page>"
-		],
-		"description": "Totvs Page"
 	},
 	"Totvs Page Child": {
 		"prefix": "thfpagechild",
@@ -499,7 +522,7 @@
 			"    ${1:...}",
 			"</totvs-page-content-header>"
 		],
-		"description": "Tovs Page Content Header"
+		"description": "Totvs Page Content Header"
 	},
 	"Totvs Page Detail": {
 		"prefix": "thfpagedetail",
@@ -565,7 +588,7 @@
 			"    <action ${1:ng-click}=\"${2:controller}.${3:import()};\">${4:Importar}</action>",
 			"</totvs-page-header-operation-action>"
 		],
-		"description": "Ttovs Page Header Operation Action"
+		"description": "Totvs  Page Header Operation Action"
 	},
 	"Totvs Page Header Operation Filter": {
 		"prefix": "thfpageheaderoperationfilter",
@@ -600,22 +623,23 @@
 	"Totvs Page Quick Filter": {
 		"prefix": "thfpagequickfilter",
 		"body": [
+			"<totvs-page-quick-filter",
+			"        ${1:filters-list}=\"${2:controller}.${3:filters}\"",
+			"        ${4:filters-list-custom}=\"${5:controller}.${6:userFilters}\"",
+			"        ${7:orderby-list}=\"${8:controller}.${9:orderby}\">",
+			"</totvs-page-quick-filter>"
+		],
+		"description": "Totvs  Page Quick Filter"
+	},
+	"Totvs Page Quick Select": {
+		"prefix": "thfpagequickselect",
+		"body": [
 			"<totvs-page-quick-select",
 			"   ${1:title}=\"${2:Selecionar todos}\"",
 			"   ${3:list}=\"${4:controller}.${5:listOfcountry}\">",
-			"</totvs-page-quick-select>",
-			"</totvs-page-quick-filter>"
+			"</totvs-page-quick-select>"
 		],
-		"description": "Totvs Page Quick Filter"
-	},
-	"Totvs Page Tags": {
-		"prefix": "thfpagetags",
-		"body": [
-			"<totvs-page-tags>",
-			"    <tag class=\"${1:tag-1}\">${2:...}</tag>",
-			"</totvs-page-tags>"
-		],
-		"description": "Ttovs Page Tags"
+		"description": "Totvs Page Quick select"
 	},
 	"Totvs  Phone": {
 		"prefix": "thfphone",
@@ -629,7 +653,16 @@
 			"    t-mask=\"${10:(99) 9999-9999}\">",
 			"</totvs-field>"
 		],
-		"description": "Tovs Phone"
+		"description": "Totvs Phone"
+	},
+	"Totvs Page Tags": {
+		"prefix": "thfpagetags",
+		"body": [
+			"<totvs-page-tags>",
+			"    <tag class=\"${1:tag-1}\">${2:...}</tag>",
+			"</totvs-page-tags>"
+		],
+		"description": "Totvs  Page Tags"
 	},
 	"Totvs  Radio": {
 		"prefix": "thfradio",
@@ -725,7 +758,7 @@
 		"description": "Totvs Tabset"
 	},
 	"Totvs  Tabset Tab": {
-		"prefix": "thftabset",
+		"prefix": "thftabsettab",
 		"body": [
 			"<totvs-tab> ${1:...} </totvs-tab>"
 		],
@@ -784,15 +817,6 @@
 		],
 		"description": "Totvs Page Widget Body"
 	},
-	"Totvs Page Widget Footer Actions": {
-		"prefix": "thfpagewidgetfooteraction",
-		"body": [
-			"<totvs-widget-footer-actions>",
-			"    <action> ${1:...} </action>",
-			"</totvs-widget-footer-actions>"
-		],
-		"description": "Totvs Page Widget Footer Actions"
-	},
 	"Totvs Page Widget Footer": {
 		"prefix": "thfpagewidgetfooter",
 		"body": [
@@ -801,6 +825,15 @@
 			"</totvs-widget-footer>"
 		],
 		"description": "Totvs Page Widget Footer"
+	},
+	"Totvs Page Widget Footer Actions": {
+		"prefix": "thfpagewidgetfooteraction",
+		"body": [
+			"<totvs-widget-footer-actions>",
+			"    <action> ${1:...} </action>",
+			"</totvs-widget-footer-actions>"
+		],
+		"description": "Totvs Page Widget Footer Actions"
 	},
 	"Totvs Page Widget Footer Body": {
 		"prefix": "thfpagewidgetfooterbody",
