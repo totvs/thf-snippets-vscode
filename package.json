@@ -1,8 +1,8 @@
 {
-    "name": "thf-snippets",
+    "name": "thf-snippets-vscode",
     "publisher": "totvs",
-    "displayName": "THF TOTVS Snippets",
-    "description": "The HTML Framework snippets by TOTVS.",
+    "displayName": "THF Snippets for VSCode",
+    "description": "The TOTVS HTML Framework snippets by TOTVS.",
     "icon": "images/thf-shield.png",
     "galleryBanner": {
         "color": "#333",
