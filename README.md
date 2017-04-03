@@ -1,6 +1,6 @@
-# THF TOTVS Snippets for VS Code
+# THF Snippets for VS Code
 
-This extension for Visual Studio Code adds snippets for THF TOTVS.
+This extension for Visual Studio Code adds snippets for THF Framework.
 
 ![Use Extension](images/use-extension.gif)
 
