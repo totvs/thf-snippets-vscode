@@ -14,12 +14,12 @@
         "url": "https://github.com/devtotvs/thf-snippets-vscode.git"
     },
     "keywords": [
-        "Angular",
+        "AngularJS",
         "TOTVS",
         "THF",
         "HTML"
     ],
-    "version": "1.0.0",
+    "version": "1.1.0",
     "engines": {
         "vscode": "0.10.x"
     },
