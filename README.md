@@ -1,4 +1,4 @@
-# THF Snippets for VS Code
+# THF Snippets for VSCode
 
 This extension for Visual Studio Code adds snippets for THF Framework.
 
@@ -15,13 +15,12 @@ thfcontroller      /// Create the .controller file
 thfcontrollerspec  /// Create the .controller.config file
 thfdirective       /// Create the .directive file
 thfdirectivelite   /// Create the .directive (lite) file
-thffunctioncompile /// Create the compile function for .directive file
-thffunctionlink    /// Create the link function for .directive file
 thfdirectivespec   /// Create the .directive.spec file
 thffactory         /// Create the .factory file
 thffactory         /// Create the .factory.spec file
 thffilter          /// Create the .filter file
 thffilterspec      /// Create the .filter.spec file
+thfi18n            /// Create the Template Sintax of i18n 
 thfmodule          /// Create the .module file
 thfmodulespec      /// Create the .module.spec file
 thfprovider        /// Create the .provider file
@@ -32,6 +31,8 @@ thfservicespec     /// Create the .service.spec file
 
 ### HTML Snippets
 ```html
+thfi18n                      /// Totvs i18n Call Sintax Template
+thfi18ncontext               /// Totvs i18n Call Sintax Template with Context
 thftpopover                  /// Totvs Template Popover
 thftpopoverremoveall         /// Totvs Popover Remove All
 thfbutton                    /// Totvs Button
@@ -41,79 +42,78 @@ thfcheckbox                  /// Totvs Field Checkbox
 thfcombo                     /// Totvs Field Combo
 thfdaterange                 /// Totvs Date Range Field
 thfdatepicker                /// Totvs Datepicker Field
-thfdiagram                   /// Totvs Diagram
 thfdecimal                   /// Totvs Field Decimal
-thfdivider                   /// Totvs Devider
+thfdiagram                   /// Totvs Diagram
 thfpageeditable              /// Totvs Editable Page
 thfeditor                    /// Totvs Editor
 thfemail                     /// Totvs Email Field
 thfexecution                 /// Totvs Executation
-thfexecutionitem             /// Totvs Executation Item
-thfcanclean                  /// Totvs field canclean
+thftotvsfield                /// Totvs Field
 thfgantt                     /// Totvs Gantt
 thfgrid                      /// Totvs Grid
 thfgridcolumn                /// Totvs Grid Column
-thfgridcolumnitem            /// Totvs Grid Column Item
+thfgridcolumnoption          /// Totvs Grid Column Option
 thfgriddetail                /// Totvs Grid Detail
 thfgridgroup                 /// Totvs Grid Group
-thfgridgroupaggregate        /// Totsvs Grid Group Aggregate
+thfgridgroupaggregate        /// Totvs Grid Group Aggregate
 thfgroupcontent              /// Totvs Group Content
-thfinput                     /// Totvs Field Input
-thfinputrange                /// Totvs Field Input Ramge
 thflistitem                  /// Totvs Item of List
+thfinput                     /// Totvs Field Input
 thflistitemaction            /// Totvs Item Action of List 
 thflistitemcontent           /// Totvs Item List  Content
-thflistitemcontentdetail     /// Totvs Item List  Content Detail
-thflistitemheader            /// Totvs Item List  Header
-thflistiteminfo              /// Totvs Item List  Info
-thflistitemtitle             /// Totvs Item List  Title
+thflistitemcontentdetail     /// Totvs Item List Content Detail
+thflistitemheader            /// Totvs Item List Header
+thfdivider                   /// Totvs Divider
+thflistiteminfo              /// Totvs Item List Info
 thflistpagination            /// Totvs List Pagination
+thflistitemtitle             /// Totvs Item List Title
+thfmap                       /// Totvs Map
+thfmashupcaptcha             /// Totvs Mashup Captcha
 thfmodalbody                 /// Totvs Modal Body
-thfmodalbody                 /// Totvs Modal Body
-thfmodalfooter               /// undefined
 thfmodalfooter               /// Totvs Modal Footer
-thfmodalheader               /// Totvs Modal Header
 thfmultiselect               /// Totvs Multiselect
+thfmodalheader               /// Totvs Modal Header
 thfnumber                    /// Totvs Number
 thfpage                      /// Totvs Page
 thfpagealert                 /// Totvs Page Alert
 thfpagebreadcrumb            /// Totvs Page Breadcrumb
 thfbreadcrumb                /// Totvs Breadcrumb
-thfpagechild                 /// Totvs Page Child
 thfpagecontent               /// Totvs Page Content
 thfpagecontentheader         /// Totvs Page Content Header
 thfpagedetail                /// Totvs Page Detail
 thfpagedetailinfo            /// Totvs Page Detail Info
 thfpagedetailinfogroup       /// Totvs Page Detail Info Group
 thftypeahead                 /// Totvs Typeahead
-thfpageheader                /// Totvs Page Header
+thfpageheaderoperationaction /// Totvs Page Header Operation Action
 thfpageheaderoperation       /// Totvs Page Header Operation
-thfpageheaderoperationaction /// Totvs  Page Header Operation Action
-thfpageheaderoperationfilter /// Totvs Page Header Operation Filter
-thfpageheadertitle           /// Totvs Page Header title
+thfpageheader                /// Totvs Page Header
+thfpagechild                 /// Totvs Page Child
 thfpagenavbar                /// Totvs Page Navbar
-thfpagequickfilter           /// Totvs  Page Quick Filter
+thfpageheadertitle           /// Totvs Page Header title
+thfpagequickfilter           /// Totvs Page Quick Filter
 thfpagequickselect           /// Totvs Page Quick select
+thfpagetags                  /// Totvs Page Tags
 thfphone                     /// Totvs Phone
-thfpagetags                  /// Totvs  Page Tags
 thfradio                     /// Totvs Radio
 thfrow                       /// Totvs Row
+thfscheduler                 /// Totvs Scheduler
 thfschedule                  /// Totvs Schedule
 thfselect                    /// Totvs Select
 thftab                       /// Totvs Tab
 thftabdropdown               /// Totvs Tab Dropdown
 thftabdropdownitem           /// Totvs Tab Dropdown Item
 thftable                     /// Totvs Table
-thftabset                    /// Totvs Tabset
-thftabsettab                 /// Totvs Tabset Tab
+thfpageheaderoperationfilter /// Totvs Page Header Operation Filter
 thftime                      /// Totvs Time 
 thfupload                    /// Totvs Upload
-thfpagewidget                /// Totvs Page Widget
-thfpagewidgetbody            /// Totvs Page Widget Body
 thfpagewidgetfooter          /// Totvs Page Widget Footer
 thfpagewidgetfooteraction    /// Totvs Page Widget Footer Actions
 thfpagewidgetfooterbody      /// Totvs Page Widget Footer Body
 thfpagewidgetheader          /// Totvs Page Widget Header
+thfpagewidget                /// Totvs Page Widget
+thfpagewidgetbody            /// Totvs Page Widget Body
+thftabset                    /// Totvs Tabset
+thftabsettab                 /// Totvs Tabset Tab
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
